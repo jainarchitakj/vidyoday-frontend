@@ -1,0 +1,77 @@
+<div class="container">
+    <div class="row">
+        <h1 class="text-center">क्षेत्र निर्माण योजना</h1>
+
+    </div>
+</div>
+<div class="container py-3">
+
+    <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+
+        <div class="col" *ngFor="let scheme of yojnaData">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-header py-3 text-white bg-primary ">
+                    <h4 class="my-0 fw-normal">{{ scheme.title }}</h4>
+                </div>
+                <div class="card-body">
+                    <h1 class="card-title pricing-card-title">{{ scheme.price }}<small class="text-muted fw-light"></small></h1>
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>{{ scheme.title }}</li>
+                        <!--<li>15 GB of storage</li>
+                        <li>Phone and email support</li>
+                        <li>Help center access</li> -->
+                    </ul>
+                    <a href="{{ scheme.schemePayUrl }}" class="w-100 btn btn-lg btn-primary" target="_blank">अभी बुक
+                        करे</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="text-center"> QR Code Scan करके दान करे | </h2>
+            <img src="https://dl.dropboxusercontent.com/s/w0fwbcomxs5oqd3/qrCodeFinal.jpg?dl=0" class="img-fluid" alt="...">
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3">
+                    <h4 class="my-0 fw-normal">Account No. : 1305002100023711</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Name</li>
+                        <li>Shri Adinath Digambar Jain Trikal Chobisi Sahastrakoot Jinalaya Nirman Samiti,</li>
+                        <li></li>
+                        <li></li>
+                        <li>Bhopal</li>
+                        <li>Punjab National Bank, Habibganj, Bhopal</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">IFSC - PUNB 0130500</button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm border-primary">
+                <div class="card-header py-3 ">
+                    <h4 class="my-0 fw-normal">Account No. : 50100111090106</h4>
+                </div>
+                <div class="card-body">
+                    <ul class="list-unstyled mt-3 mb-4">
+                        <li>Name</li>
+                        <li>Shri ADJTCSKJNS U/O SDJPC</li>
+
+
+                        <li>Bhopal</li>
+                        <li>HDFC Bank LTD, 179-MP Nagar, Zone-II, Near Hotel Lake, Bhopal</li>
+                    </ul>
+                    <button type="button" class="w-100 btn btn-lg btn-primary">IFSC - HDFC 0001257</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #F16232;">
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="https://dl.dropboxusercontent.com/s/7bdkzakeheekaqz/logo-removebg-preview.png?dl=0" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">विद्योदय  </a>
+        <button #navbarToggler class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" (click)="isShown = !isShown" [attr.aria-expanded]="isShown" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" [ngClass]="{ 'show': isShown }" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" (click)="isShown = false" routerLink="">होम</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="price">योजनाएँ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="gallery">गैलरी  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="about">हमारे बारे में </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="contactus">संपर्क सूत्र </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="privacy-policy">Privacy Policy </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="refund-policy">Refund Policy </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" (click)="isShown = false" routerLink="terms">Terms and Conditions </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<!-- <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #F96D16;">
+
+
+
+    <div class="container-fluid">
+        <a class="navbar-brand" routerLink="/">
+            <img src="https://dl.dropboxusercontent.com/s/7bdkzakeheekaqz/logo-removebg-preview.png?dl=0" width="30" height="30" alt="">
+        </a>
+        <a class="navbar-brand" href="#">विद्योदय  </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="">होम</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="price">योजनाएँ </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="gallery">गैलरी  </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="about">हमारे बारे में </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="contactus">संपर्क सूत्र </a>
+                </li>
+            </ul>
+
+        </div>
+    </div>
+    </nav>
+    -->
